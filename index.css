@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav {
+  background-color: #008080;
+  color: #f0fff0;
+  height: 40px;
+  font-size: 25px;
+  display:flex;
+  align-items:center;
+}
+
+
+#h3 {
+  text-align:center;
+  color: mediumpurple;
+  margin:3vh 0vh;
+}
+
+/* game_css */
+.game_container {
+  display: flex;
+  justify-content: center;
+  margin: 11vh 0vh;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+  position:relative;
+}
+.items
+{
+  border: 2px solid red;
+  cursor: pointer;
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9vh;
+}
+.items:hover
+{
+  background-color: ghostwhite;
+  cursor:pointer;
+}
+
+.b_top
+{
+  border-top: 0px;
+}
+.b_left
+{
+  border-left: 0px;
+}
+.b_bottom
+{
+  border-bottom: 0px;
+}
+.b_right
+{
+  border-right: 0px;
+}
+
+#info
+{
+  position:absolute;
+  top:43vw;
+}
+#span
+{
+  padding-right: 2vh;
+}
+#playagain
+{
+    padding: 1vh 2vh;
+    background-color: yellowgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 11px;
+    cursor: pointer;
+    border-color: deepskyblue;
+}
+.line
+{
+    height: 5px;
+    position:absolute;
+    width: 0;
+    background-color: black;
+    transition: width 1s ease-in-out;
+}
+
+
+
+
+
+/* game_css */
+
+
+@media screen and (max-width: 800px)
+{
+  .container { 
+    grid-template-rows: repeat(3, 20vw);
+    grid-template-columns: repeat(3, 20vw);
+    padding: 10px 0px;
+    margin: 0px -19px;
+  }
+  .span
+  {
+    font-size:32px;
+  }
+  .firstdiv h3
+  {
+     font-size: 3vh;
+  }
+/*   (max-width : 410px) */
+  nav
+  {
+    font-size:0.9em;
+  }
+  #info
+  {
+  
+    top:24vw;
+    font-size: 2vh;
+  }
+  #playagain
+  {
+    font-size: 2vh;
+  }
+/*   linecontrol */
+  .line
+  {
+    width: 0vh !important;    
+  }
+}
